@@ -1,0 +1,299 @@
+/* Title: The Special Miami - Healthy Vegetarian Lunches
+Description: We deliver healthy food for people who want to eat a nutritious diet but don't have the time to propare it on their own. Our food is made from scratch using the healthiest and most fresh ingredients we find daily.
+Author URL: http://www.thespecialmiami.com
+Tags: healthy meals, vegetarian, healthy food, healthy meals delivered, miami, miami beach, 
+lunch, delivery, Design District, Downtown, Brickell, healthy lunches, vegetarian food, the special,
+the special miami, healthy vegetarian lunches, catering, healthy catering, health food, healthy options,
+vegetarian catering, business meeting catering, */
+
+// Types (font-family:'Roboto'; and font-size: 100%; font-weight: 300; in body{} section Layout)
+
+@import 'responsiveStyle.css';
+
+@import 'textStyles';
+
+@import 'headerStyles';
+
+$main_color: #088A29;
+
+$button_color: #84bd68;
+
+// layout
+
+// header
+
+// mixin for picture rounded corners
+@mixin border-radius($radius) 
+{
+	-moz-border-radius: $radius;
+	-webkit-border-radius: $radius;
+	-ms-border-radius: $radius;
+	border-radius: $radius;
+}
+
+@mixin transition-opacity($time) 
+{
+	-webkit-transition: opacity $time ease-in-out;
+	-moz-transition: opacity $time ease-in-out;
+	-o-transition: opacity $time ease-in-out;
+	transition: opacity $time ease-in-out;
+}
+
+body 
+{
+	font-family: 'Roboto';
+	font-weight: 300;
+	font-size: 100%;
+}
+	
+img 
+{
+	padding: 0;
+	@include border-radius(12px);
+}
+
+#wrapper 
+{
+	position:relative;
+	width: 960px;
+	margin:0 auto 0;
+}
+	
+#wrapper_scroll 
+{
+	position:relative;
+	width: 960px;
+	margin:0 auto 0;
+	padding: 0 0 0 16px;
+}
+
+// main section
+
+// left side
+
+#core 
+{
+ 
+	margin-bottom: 20px;
+	width: 96%;
+}
+
+section#left
+{  
+	width: 460px;  
+	float: left;
+}
+
+.vertical_divider
+{
+	margin-top: 20px;
+}
+
+section#right
+{  
+	float: right;  
+	width: 460px;
+}
+
+.header_spacing 
+{
+	padding-top: 10px;
+}
+
+#index_order_button
+{
+	background-color: green; //#84bd68
+	color: white;
+	// border: 1px solid black;
+	padding: 6px 10px 6px 10px;
+	margin: 20px 0 0 0;
+	font-size: 100%;
+	border-radius: 5px;
+}
+
+
+#index_order_button:hover
+{
+	background-color: #84bd68;
+	color: black;
+}
+
+a.my_button
+{
+	background-color: green; //#84bd68
+	color: #fff;
+}
+
+a.my_button:hover
+{
+	background-color: #84bd68;
+	color: black;
+}
+
+#info_buttons
+{
+	position: relative;
+}
+
+.info_link
+{
+	background-color: green;
+	color: white;
+	border: 1px solid #84bd68;
+	padding: 0 6px 0 8px;
+	margin: 0px 8px 0px 1px;
+	font-size: 100%;
+}
+
+.info_link:hover
+{
+	background-color: #84bd68;
+	color: black;
+}
+
+
+#info_popup1 span, #info_popup2 span, #info_popup3 span
+{
+	display: none;
+}
+
+#info_popup1:hover span, #info_popup2:hover span, #info_popup3:hover span
+{ 
+	display: block; 
+	position: absolute; 
+	top: -280px; 
+	left: 505px; 
+	width: 438px; 
+	border: 1px dotted black;
+	background-color: #84bd68; 
+	color: black;
+	filter: alpha(opacity=90); 
+	opacity: 0.9;
+	padding: 0px 5px 8px 5px;
+	font-size: 120%;
+	font-weight: 400;
+	z-index:3;
+}
+
+// right side
+
+#pos_main_pic
+{
+
+	@include transition-opacity(1s);
+}
+
+#pos_main_pic img
+{
+	position:absolute;
+
+	@include transition-opacity(1s);
+	@include border-radius(12px);
+}
+
+#pos_main_pic img.top:hover
+{
+	opacity:0;
+}
+
+#pos_main_pic img.bottom:active 
+{
+	img_top: opacity=100;
+}
+
+#pos_main_price
+{
+	position:absolute;
+
+	width: 150px;
+	height: 113px;
+	z-index: 2;
+	opacity:0.86;
+	@include border-radius(6px);
+}
+
+// other pages
+
+// order page
+
+#pos_order_img
+{
+	display: block;
+	padding: 10px 4px;
+}
+
+#pos_order_img img
+{
+	padding:0 4px;
+}
+
+#pos_orderform
+{
+
+	// border: 1px solid green;
+}
+
+.tail_spacing 
+{
+	padding-bottom: 10px;
+}
+
+// reviews page
+
+section#full
+{
+	width: 96%;
+	padding-bottom: 10px;  
+}
+
+.float_right
+{
+	float: right;
+	margin-left: 20px;
+}
+
+.divider_float_left
+{
+	float:left;
+	padding-left: 80px;
+	padding-right: 110px;
+	padding-top: 15px;
+	padding-bottom: 10px;
+}
+
+// faq page
+
+
+// about page
+
+
+// messageorder page
+
+.order_rollover
+{
+	position:relative;
+	padding: 0;
+	margin: 0;
+	width: 135px;
+	height: 30px;
+	
+}
+
+.order_rollover :hover
+{
+	opacity: 0.5; 
+	filter:alpha(opacity=0);
+}
+
+#pos_paypal_button
+{
+	position:relative;
+}
+
+// pay page
+
+#pos_paypal_button_pay
+{
+	left: 255px;
+	position:absolute;
+}

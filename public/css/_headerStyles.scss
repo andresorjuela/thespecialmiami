@@ -1,0 +1,200 @@
+$main_color: #088A29;
+
+
+
+
+	
+
+// top notice
+
+
+
+// main logo
+
+.logo
+{
+	margin-top: 10px;
+}
+
+
+.snail
+{
+	margin-top: 40px;
+}
+
+@mixin border-radius($radius) 
+{
+	-moz-border-radius: $radius;
+	-webkit-border-radius: $radius;
+	-ms-border-radius: $radius;
+	border-radius: $radius;
+}
+
+
+// email signup
+
+#pos_dailyEmail
+{
+	position:relative;
+	top: -100px;
+	left: 535px;
+}
+
+// navigation
+nav {
+	margin-top: 20px;
+	margin-left: 40px;
+}
+nav li
+{
+	font-size: 18pt;
+	margin: 0 10px 0 20px;
+}
+
+.active{
+	margin-top: 8px;
+}
+
+
+
+
+
+
+// footer
+
+#footer
+{
+	clear: both;
+	position: relative;
+}
+
+#bottom_box
+{
+	margin: 10px 0 0 5px;
+	width: 97%;
+	height: 41px;
+	background-color: $main_color;
+	@include border-radius(5px);
+}
+
+#phone
+{
+	float: left;
+	padding: 10px 0 0 6px;
+	font-style:normal;
+}
+#email
+	{
+	float: right;
+	font-style:normal;
+	padding: 10px 6px 0 0;
+	}
+	
+@media screen and (max-width: 640px) 
+{
+	#email
+	{
+	font-style:normal;
+	padding: 10px 0 0 0;
+	font-size: 90%;
+	float: right;
+	}
+	#phone
+	{
+	padding: 10px 0 0 0;
+	font-style:normal;
+	
+	}
+	h4.mobile_date
+	{
+	font-size: 90%;
+	}
+}
+
+a[href^=tel]{
+    color:inherit;
+    text-decoration:none;
+}
+
+// aside buttons
+
+
+
+.bottom-links
+{
+	display: inline-block;
+}
+
+.inline
+{
+	text-align: center;
+}
+
+
+@mixin aside-button-pos($num) 
+{
+	left:45*$num;
+	top:0px;
+}
+
+@mixin transition-opacity($time) 
+{
+	-webkit-transition: opacity $time ease-in-out;
+	-moz-transition: opacity $time ease-in-out;
+	-o-transition: opacity $time ease-in-out;
+	transition: opacity $time ease-in-out;
+}
+
+
+
+#pos_yelp img, #pos_facebook img, #pos_twitter img, #pos_tripadvisor img, #pos_happycow img, #pos_instagram img
+{
+	@include border-radius(8px);
+}
+
+
+#pos_yelp
+{
+	@include aside-button-pos(0px);
+}
+
+#pos_facebook 
+{
+	@include aside-button-pos(1px);
+}
+
+#pos_instagram
+{
+	@include aside-button-pos(2px);
+}
+
+#pos_twitter
+{
+	@include aside-button-pos(3px);
+}
+	
+#pos_tripadvisor
+{
+	@include aside-button-pos(4px);
+}
+	
+#pos_happycow 
+{
+	@include aside-button-pos(5px);
+}
+
+
+
+
+#login
+{
+	position: relative;
+	height: 20px;
+	padding: 0;
+	display: block;
+}
+
+#login li
+{
+	display: inline;
+}

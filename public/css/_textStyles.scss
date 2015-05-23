@@ -1,0 +1,171 @@
+// Types (font-family:'Roboto'; and font-size: 100%; font-weight: 300; in body{} section Layout)
+
+//bread text
+
+body 
+{
+	font-family: 'Roboto';
+	font-weight: 300;
+	font-size: 100%;
+}
+
+p
+{
+	margin: 0;
+	padding: 0 0 0 0;
+	line-height: 125%;
+	font-weight: 300;
+}
+
+.p_green
+{
+	color: green;
+}
+
+.p_white
+{
+	color: white;
+}
+
+.p_bold
+{
+	font-weight: 400;
+}
+
+.p_small
+{
+	color: green;
+	font-size: 80%;	
+}
+
+//headings
+
+h1, h2, h3, h4, h5
+{
+	color: green;
+	font-weight: 300;
+	margin: 0;
+	padding: 0;	
+}
+
+h2
+{
+	font-size: 130%;
+	font-weight: 400;
+}
+
+.h1_thin
+{
+	font-weight: 100;	
+}
+
+h3 {
+	font-size: 100%;
+}
+
+h4 {
+	font-size: 110%;
+	padding: 0 0 6px 0;
+}
+
+h5
+{
+	font-size: 80%;	
+}
+
+.menu_text
+{
+	padding: 0 60px 0 60px;
+}
+
+
+
+@media screen and (min-width: 640px) 
+{
+	#current
+	{
+		font-weight: 200;
+	}
+	
+}
+
+
+
+span
+{
+	vertical-align: middle;
+}
+
+@media screen and (max-width: 640px) 
+{
+	.menu_text
+	{
+		padding: 0 20px 0 20px;
+	}
+	p
+	{
+		margin: 0;
+		padding: 0;
+		line-height: 125%;
+		font-weight: 400;
+	}
+	.top_padding
+	{
+		margin: 12px 0 0 0;
+		
+	}
+	.top_padding2
+	{
+		margin-bottom: 30px;
+	}
+	.top_padding img
+	{
+		margin-bottom: 15px;
+	}
+	.p_bold
+	{
+		font-weight: bolder;
+		font-size: 120%
+	}
+	
+	.inv_small
+	{
+		display: none;
+	}
+
+}
+
+
+
+@media screen and (min-width: 800px) 
+{
+	
+	.space
+	{
+		margin-top: 20px;
+	}
+	.menu_to_pic
+	{
+		padding: 0 0 20px 0;
+	}
+
+}
+
+.orderbutton_maincourse
+{
+	padding: 10px 0 0 0;
+	border-radius: 5px;
+	
+}
+//links
+
+a:link, a:visited, a:hover, a:active
+{
+	color: green; 
+	text-decoration: none;
+}
+
+ul, li
+{
+	text-decoration: none;
+}

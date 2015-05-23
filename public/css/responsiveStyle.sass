@@ -1,0 +1,68 @@
+//header
+.center-items
+	text-align: center
+a
+    color: green
+a:hover
+    color: black
+nav img
+input[type=checkbox]
+    display: none
+.show-menu
+    display: none
+    margin: 6px
+    padding: 0 2px 0 0
+    border: solid 1px green
+    color: green
+    font-size: 100%
+.nav
+    text-align: center
+.nav ul
+    list-style-type: none
+    margin: 0 0 0 2px // keeps the lines from moving far
+    padding: 0
+.nav ul li
+    display: inline-block
+    font-size: 160%
+    margin: 0 10px 0 10px
+    padding: 0 10px 0 10px
+.nav ul li a
+    display: block
+    text-decoration: none
+    color: green
+#current
+    color: black
+input[type=checkbox]:checked ~ #menu
+    display: block
+    width: 97%
+    margin: 0 0 0 6px
+.icon_menu
+    margin: 0 3px 3px 0
+@media screen and (max-width: 640px)
+    .lines
+        display: none
+    .show-menu
+        display: block
+        width: 97%
+    .nav
+        text-align: center
+    .nav ul
+        display: none
+    .nav ul li
+        font-size: 100%
+        color: green
+        border: solid 1px green
+        margin: -1px 0 0 0
+        padding: 0 2px 0 2px
+    .nav ul li:hover
+        font-size: 100%
+        color: #fff
+        background: green
+        border: solid 1px green
+    #current:hover
+        color: black
+        background: #fff
+    .nav ul li a:hover
+        color: #fff
+    ul li, li a
+        width: 100%

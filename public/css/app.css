@@ -1,0 +1,383 @@
+/* Title: The Special Miami - Healthy Vegetarian Lunches
+Description: We deliver healthy food for people who want to eat a nutritious diet but don't have the time to propare it on their own. Our food is made from scratch using the healthiest and most fresh ingredients we find daily.
+Author URL: http://www.thespecialmiami.com
+Tags: healthy meals, vegetarian, healthy food, healthy meals delivered, miami, miami beach, 
+lunch, delivery, Design District, Downtown, Brickell, healthy lunches, vegetarian food, the special,
+the special miami, healthy vegetarian lunches, catering, healthy catering, health food, healthy options,
+vegetarian catering, business meeting catering, */
+@import url('responsiveStyle.css');
+body {
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 100%; }
+
+p {
+  margin: 0;
+  padding: 0 0 0 0;
+  line-height: 125%;
+  font-weight: 300; }
+
+.p_green {
+  color: green; }
+
+.p_white {
+  color: white; }
+
+.p_bold {
+  font-weight: 400; }
+
+.p_small {
+  color: green;
+  font-size: 80%; }
+
+h1, h2, h3, h4, h5 {
+  color: green;
+  font-weight: 300;
+  margin: 0;
+  padding: 0; }
+
+h2 {
+  font-size: 130%;
+  font-weight: 400; }
+
+.h1_thin {
+  font-weight: 100; }
+
+h3 {
+  font-size: 100%; }
+
+h4 {
+  font-size: 110%;
+  padding: 0 0 6px 0; }
+
+h5 {
+  font-size: 80%; }
+
+.menu_text {
+  padding: 0 60px 0 60px; }
+
+@media screen and (min-width: 640px) {
+  #current {
+    font-weight: 200; } }
+
+span {
+  vertical-align: middle; }
+
+@media screen and (max-width: 640px) {
+  .menu_text {
+    padding: 0 20px 0 20px; }
+  p {
+    margin: 0;
+    padding: 0;
+    line-height: 125%;
+    font-weight: 400; }
+  .top_padding {
+    margin: 12px 0 0 0; }
+  .top_padding2 {
+    margin-bottom: 30px; }
+  .top_padding img {
+    margin-bottom: 15px; }
+  .p_bold {
+    font-weight: bolder;
+    font-size: 120%; }
+  .inv_small {
+    display: none; } }
+
+@media screen and (min-width: 800px) {
+  .space {
+    margin-top: 20px; }
+  .menu_to_pic {
+    padding: 0 0 20px 0; } }
+
+.orderbutton_maincourse {
+  padding: 10px 0 0 0;
+  border-radius: 5px; }
+
+a:link, a:visited, a:hover, a:active {
+  color: green;
+  text-decoration: none; }
+
+ul, li {
+  text-decoration: none; }
+
+.logo {
+  margin-top: 10px; }
+
+.snail {
+  margin-top: 40px; }
+
+#pos_dailyEmail {
+  position: relative;
+  top: -100px;
+  left: 535px; }
+
+nav {
+  margin-top: 20px;
+  margin-left: 40px; }
+
+nav li {
+  font-size: 18pt;
+  margin: 0 10px 0 20px; }
+
+.active {
+  margin-top: 8px; }
+
+#footer {
+  clear: both;
+  position: relative; }
+
+#bottom_box {
+  margin: 10px 0 0 5px;
+  width: 97%;
+  height: 41px;
+  background-color: #088A29;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px; }
+
+#phone {
+  float: left;
+  padding: 10px 0 0 6px;
+  font-style: normal; }
+
+#email {
+  float: right;
+  font-style: normal;
+  padding: 10px 6px 0 0; }
+
+@media screen and (max-width: 640px) {
+  #email {
+    font-style: normal;
+    padding: 10px 0 0 0;
+    font-size: 90%;
+    float: right; }
+  #phone {
+    padding: 10px 0 0 0;
+    font-style: normal; }
+  h4.mobile_date {
+    font-size: 90%; } }
+
+a[href^=tel] {
+  color: inherit;
+  text-decoration: none; }
+
+.bottom-links {
+  display: inline-block; }
+
+.inline {
+  text-align: center; }
+
+#pos_yelp img, #pos_facebook img, #pos_twitter img, #pos_tripadvisor img, #pos_happycow img, #pos_instagram img {
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -ms-border-radius: 8px;
+  border-radius: 8px; }
+
+#pos_yelp {
+  left: 0px;
+  top: 0px; }
+
+#pos_facebook {
+  left: 45px;
+  top: 0px; }
+
+#pos_instagram {
+  left: 90px;
+  top: 0px; }
+
+#pos_twitter {
+  left: 135px;
+  top: 0px; }
+
+#pos_tripadvisor {
+  left: 180px;
+  top: 0px; }
+
+#pos_happycow {
+  left: 225px;
+  top: 0px; }
+
+#login {
+  position: relative;
+  height: 20px;
+  padding: 0;
+  display: block; }
+
+#login li {
+  display: inline; }
+
+body {
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 100%; }
+
+img {
+  padding: 0;
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -ms-border-radius: 12px;
+  border-radius: 12px; }
+
+#wrapper {
+  position: relative;
+  width: 960px;
+  margin: 0 auto 0; }
+
+#wrapper_scroll {
+  position: relative;
+  width: 960px;
+  margin: 0 auto 0;
+  padding: 0 0 0 16px; }
+
+#core {
+  margin-bottom: 20px;
+  width: 96%; }
+
+section#left {
+  width: 460px;
+  float: left; }
+
+.vertical_divider {
+  margin-top: 20px; }
+
+section#right {
+  float: right;
+  width: 460px; }
+
+.header_spacing {
+  padding-top: 10px; }
+
+#index_order_button {
+  background-color: green;
+  color: white;
+  padding: 6px 10px 6px 10px;
+  margin: 20px 0 0 0;
+  font-size: 100%;
+  border-radius: 5px; }
+
+#index_order_button:hover {
+  background-color: #84bd68;
+  color: black; }
+
+a.my_button {
+  background-color: green;
+  color: #fff; }
+
+a.my_button:hover {
+  background-color: #84bd68;
+  color: black; }
+
+#info_buttons {
+  position: relative; }
+
+.info_link {
+  background-color: green;
+  color: white;
+  border: 1px solid #84bd68;
+  padding: 0 6px 0 8px;
+  margin: 0px 8px 0px 1px;
+  font-size: 100%; }
+
+.info_link:hover {
+  background-color: #84bd68;
+  color: black; }
+
+#info_popup1 span, #info_popup2 span, #info_popup3 span {
+  display: none; }
+
+#info_popup1:hover span, #info_popup2:hover span, #info_popup3:hover span {
+  display: block;
+  position: absolute;
+  top: -280px;
+  left: 505px;
+  width: 438px;
+  border: 1px dotted black;
+  background-color: #84bd68;
+  color: black;
+  filter: alpha(opacity=90);
+  opacity: 0.9;
+  padding: 0px 5px 8px 5px;
+  font-size: 120%;
+  font-weight: 400;
+  z-index: 3; }
+
+#pos_main_pic {
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out; }
+
+#pos_main_pic img {
+  position: absolute;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -ms-border-radius: 12px;
+  border-radius: 12px; }
+
+#pos_main_pic img.top:hover {
+  opacity: 0; }
+
+#pos_main_pic img.bottom:active {
+  img_top: opacity=100; }
+
+#pos_main_price {
+  position: absolute;
+  width: 150px;
+  height: 113px;
+  z-index: 2;
+  opacity: 0.86;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -ms-border-radius: 6px;
+  border-radius: 6px; }
+
+#pos_order_img {
+  display: block;
+  padding: 10px 4px; }
+
+#pos_order_img img {
+  padding: 0 4px; }
+
+
+.tail_spacing {
+  padding-bottom: 10px; }
+
+section#full {
+  width: 96%;
+  padding-bottom: 10px; }
+
+.float_right {
+  float: right;
+  margin-left: 20px; }
+
+.divider_float_left {
+  float: left;
+  padding-left: 80px;
+  padding-right: 110px;
+  padding-top: 15px;
+  padding-bottom: 10px; }
+
+.order_rollover {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  width: 135px;
+  height: 30px; }
+
+.order_rollover :hover {
+  opacity: 0.5;
+  filter: alpha(opacity=0); }
+
+#pos_paypal_button {
+  position: relative; }
+
+#pos_paypal_button_pay {
+  left: 255px;
+  position: absolute; }
+
+/*# sourceMappingURL=app.map */
