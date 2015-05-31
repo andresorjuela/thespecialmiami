@@ -38,14 +38,9 @@ class MY_Controller extends CI_Controller
         // builds button html for phones
         $this->data['buttonsSmall_html'] = $this->Footer_model->buildButton_html($button_list, 'jpg');
         
-        // makes $data available to the view, not working...
-        // $this->load->vars($data);
-        
-        // $this->load->model('Meal_rotation_model');
-        
         // uncomment to see output information: query speeds, etc
         // $this->output->enable_profiler(ENVIRONMENT == 'development');
-        
+ 
         $this->load->view('layouts/layout.php', $this->data);
     }
     

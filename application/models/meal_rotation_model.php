@@ -15,10 +15,10 @@ class Meal_rotation_model extends MY_Model
     public function next_open_date()
     {
         // day of the week as 1-7 (Monday-Sunday);
-        $weekday =  date('N');
+        $this->weekday =  date('N');
         
         // for Monday - Thursday next_open_day is tomorrow
-        if($weekday <= 4)
+        if($this->weekday <= 4)
         {
             $next_open_date = date('Y-m-d', strtotime('tomorrow'));
         }
@@ -74,6 +74,7 @@ class Meal_rotation_model extends MY_Model
                 $check_change = $this->next_day_lunch[$item . '_change'];
                 // echo 'check: ' . $check_change;
                 
+                // if there is a change in one of the courses it changes the necessary items in the nex_day_lunch array
                 if($check_change != '0')
                 {
                     $change_item = $this->check_for_change($item);
@@ -82,9 +83,20 @@ class Meal_rotation_model extends MY_Model
                     $this->next_day_lunch[$item . '_calories'] = $change_item[$item . '_calories'];
                     $this->next_day_lunch[$item . '_diduknow'] = $change_item[$item . '_diduknow'];
                 }
+                // if there is no change it makes the change number equal to the menu_id
+                else
+                {
+                    $this->next_day_lunch[$item . '_change'] = $this->menu_id;
+                }
             }
         }
+        
+        $this->next_day_lunch['tomorrows_f'] = $this->word_tomorrows();
+        $this->next_day_lunch['img_top'] = $this->img_lunch();
+        
         return $this->next_day_lunch;
+        
+        
     }
     
     // checks to see if tomorrow's menu has been changed and sets correct courses based on it
@@ -133,7 +145,7 @@ class Meal_rotation_model extends MY_Model
             $closedStart = $this->closed_day_list['start_date'];
             $closedEnd = $this->closed_day_list['end_date'];
             
-            $nextOpenDate_afterClosed = date('l, F jS, Y', strtotime($closedEnd . ' +1 Weekday'));
+            $nextOpenDate_afterClosed = date('l, F jS, Y', strtotime($closedEnd . '+1 Weekday'));
             
             // check to see if closed for 1 day and sets closedMessage_html
             if($closedStart == $closedEnd)
@@ -162,6 +174,35 @@ class Meal_rotation_model extends MY_Model
         return $closedMessage_html;       
     }
     
+    public function meal_served()
+    {
+        // gets menu information for first, second, third and side and puts it into ts_menuRotation table with tomorrow's date, so we can keep track of what meals are served each day and can get stats on most popular menus
+    }
+    
+    public function word_tomorrows()
+	{
+	
+	//Changes Tomorrow's on Friday and Saturday to Monday's
+	if (($this->weekday == 5) || ($this->weekday == 6))
+		{
+        $format_date = date('F jS', strtotime($this->next_open_date));
+		$tomorrows  = 'Monday\'s Lunch, ' . $format_date;
+		//echo $tomorrows."  "; // for testing
+		}
+	else 
+		{
+		$tomorrows = 'Tomorrow\'s Lunch, ';
+		}
+	return $tomorrows;
+	}
+    
+    public function img_lunch()
+    {
+        $vartop = '<img src="http://' . base_url() . 'public/img/%d.jpg" alt="Tomorrow\'s Lunch" />';
+        $img_top = sprintf($vartop, $this->menu_id);
+        
+        return $img_top;
+    }
     
 }
  

@@ -34,7 +34,7 @@ class Page extends MY_Controller
 	public function index()
     {     
         // gets info for next meal or closed and sends it to index as array
-        $this->next_open_meal();
+        $data = $this->next_open_meal();
         
         // calls load_view() in MY_Controller class and creates and loads basic layout view
         $this->load_view('index', 'split');

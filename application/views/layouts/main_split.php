@@ -5,9 +5,14 @@
     <div class="small-12 medium-6 columns">
 			
         <section id="left">
-		
-			Left Section: <?=$current_page?>
-            <?php $this->load->view('layouts/main/index.php'); ?>
+    
+            <?php
+
+            // dump($tomorrows_f);
+
+            $this->load->view('layouts/main/index_left.php'); 
+            
+            ?>
             
         </section>
         
@@ -17,7 +22,7 @@
 
         <section id="right">
 		
-			Right Section: <?=$current_page?>
+            <?=$next_menu_or_closed['img_top']?>
             
         </section>
 
