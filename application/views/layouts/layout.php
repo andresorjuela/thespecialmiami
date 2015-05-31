@@ -1,14 +1,12 @@
-
-
 <!DOCTYPE html><html lang='en'>
 
 <html>
     
     <head>
-        
-    <!-- load head -->
-    <?php
 
+    <?php
+    
+    // loads the head: css, meta tags, googleanalytics, scripts...
     $this->load->view('layouts/head.php');
 
     ?>
@@ -19,9 +17,11 @@
 	<body onload='document.order_form.email.focus()'>	
 
         <div class="container">
+            
             <header>
 
             <?php
+
             // loads the company logo and 3 top links
             $this->load->view('layouts/page_head.php');
 
@@ -39,14 +39,21 @@
             
             <main>
             
+            <?php
+
+            // loads the main holder whole or split
+            $this->load->view('layouts/main_' . $main_type . '.php');
+
+            ?>
             
             </main>
             
             <footer>
             
             <?php
+
             // loads the footer
-            $this->load->view('layouts/footer.php');
+            $this->load->view('layouts/footer.php', $buttons_html);
 
             ?>
             

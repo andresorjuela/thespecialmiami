@@ -1,9 +1,9 @@
 <nav class="nav row">
     
-    <label for="show-menu" class="show-menu"><img src="public/img/icon_menu.png" class="icon_menu">Menu</label>
+    <label for="show-menu" class="show-menu"><img src="http://<?=base_url();?>public/img/icon_menu.png" class="icon_menu">Menu</label>
     <input type="checkbox" id="show-menu" role="button">
 			
-    <img src="public/img/GreenLine.gif" class="lines">
+    <img src="http://<?=base_url();?>public/img/GreenLine.gif" class="lines">
 		    
     <ul id="menu">
     
@@ -11,6 +11,6 @@
         
     <ul>
 				
-    <img src="public/img/GreenLine.gif" class="lines">
+    <img src="http://<?=base_url();?>public/img/GreenLine.gif" class="lines">
 		    
 </nav>

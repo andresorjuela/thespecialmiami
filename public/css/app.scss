@@ -84,16 +84,23 @@ section#left
 	float: left;
 }
 
-.vertical_divider
-{
-	margin-top: 20px;
-}
-
 section#right
 {  
 	float: right;  
 	width: 460px;
 }
+
+section#whole
+{
+    width: 96%;
+}
+
+.vertical_divider
+{
+	margin-top: 20px;
+}
+
+
 
 .header_spacing 
 {
@@ -240,11 +247,7 @@ a.my_button:hover
 
 // reviews page
 
-section#full
-{
-	width: 96%;
-	padding-bottom: 10px;  
-}
+
 
 .float_right
 {
